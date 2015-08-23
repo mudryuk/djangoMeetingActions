@@ -1,5 +1,8 @@
 ﻿"""
 Django settings for MeetingActions project.
+Dont forget to
+    import django
+    django.setup()
 """
 
 from os import path
@@ -13,7 +16,7 @@ ALLOWED_HOSTS = (
 )
 
 ADMINS = (
-    # ('Your Name', 'your_email@example.com'),
+    # ('user', 'a@b.com'),
 )
 
 MANAGERS = ADMINS
@@ -130,11 +133,12 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'app',
     # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
+    'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
+    'django.contrib.admindocs',
+    #'polls',
+    'app',
 )
 
 # A sample logging configuration. The only tangible logging
